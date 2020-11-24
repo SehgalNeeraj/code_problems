@@ -52,5 +52,13 @@ function weirdAlgo(num) {
   console.log(response);
 }
 
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
 // MAIN
-weirdAlgo(3);
+readline.question("", (input) => {
+  weirdAlgo(parseInt(input));
+  readline.close();
+});
