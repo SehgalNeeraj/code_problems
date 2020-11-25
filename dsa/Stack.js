@@ -3,7 +3,7 @@
 
 class Stack {
   constructor() {
-      this.elements = {};
+      this.elements = [];
     this.count = 0;
   }
 
